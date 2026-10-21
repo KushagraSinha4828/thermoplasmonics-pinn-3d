@@ -301,7 +301,7 @@ thermoplasmonics-pinn-3d/
 
 ### 1. Installation
 ```bash
-git clone [https://github.com/](https://github.com/)<your-username>/thermoplasmonics-pinn-3d.git
+git clone https://github.com/KushagraSinha4828/thermoplasmonics-pinn-3d.git
 cd thermoplasmonics-pinn-3d
 pip install -r requirements.txt
 ```
@@ -386,4 +386,6 @@ If you use this solver library, cleaning pipeline, or PINN architecture in your 
   month  = {August},
   note   = {Supervised by Dr. Adarsh Vasista, Department of Physics}
 }
-```
+```git clone https://github.com/KushagraSinha4828/thermoplasmonics-pinn-3d.git
+cd thermoplasmonics-pinn-3d
+pip install -r requirements.txt
