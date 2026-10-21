@@ -1,0 +1,560 @@
+{
+  "checkpoint": "D:\\IISERB\\Research\\ThermoPlasmonics\\codes\\PINN_kunchenjunga_data_codes\\PGI_Hnet checkpoints\\pinn_latest_V20.101a.pth",
+  "checkpoint_sha256": "8de9528d7d50f22966403e4f6d384af37c6b1d4ab26a69e985546b42b3ff3f8c",
+  "grid": {
+    "shape": [
+      32,
+      128,
+      128
+    ],
+    "xy_window_um": 12.8,
+    "z_range_um": [
+      0.0,
+      200.0
+    ]
+  },
+  "common_parameters": {
+    "particle": "Au nanosphere",
+    "particle_radius_nm": 50.0,
+    "pump_nm": 532.0,
+    "probe_nm": 532.0,
+    "intensity_w_um2": 0.05,
+    "water_beta_polynomial": [
+      -0.00010514,
+      -1.5692e-06,
+      5.7538e-09,
+      -1.2873e-11
+    ]
+  },
+  "main_case": {
+    "name": "Glass / Water / PDMS",
+    "materials": [
+      "glass",
+      "water",
+      "pdms"
+    ],
+    "boundaries_um": [
+      40.0,
+      160.0
+    ],
+    "z0_um": 100.0,
+    "sigma_abs_um2": 0.020894135777742025,
+    "predicted_peak_k": 250.1013641357422,
+    "true_peak_k": 197.168212890625,
+    "pred_peak_k": 250.1013641357422,
+    "nrmse": 0.03487090393900871,
+    "nmae": 0.025962358340620995,
+    "z_true_peak_um": 103.2258064516129,
+    "z_pred_peak_um": 96.77419354838709
+  },
+  "forward_cases": [
+    {
+      "name": "Homogeneous Water",
+      "materials": [
+        "water",
+        "water",
+        "water"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 100.0,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 231.292724609375,
+      "true_peak_k": 195.9163818359375,
+      "pred_peak_k": 231.292724609375,
+      "nrmse": 0.01697062887251377,
+      "nmae": 0.0076150353997945786,
+      "z_true_peak_um": 96.77419354838709,
+      "z_pred_peak_um": 96.77419354838709
+    },
+    {
+      "name": "Glass Substrate",
+      "materials": [
+        "glass",
+        "water",
+        "water"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 100.0,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 229.5441131591797,
+      "true_peak_k": 194.5105438232422,
+      "pred_peak_k": 229.5441131591797,
+      "nrmse": 0.017456742003560066,
+      "nmae": 0.008142633363604546,
+      "z_true_peak_um": 103.2258064516129,
+      "z_pred_peak_um": 96.77419354838709
+    },
+    {
+      "name": "PDMS Superstrate",
+      "materials": [
+        "water",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 100.0,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 250.42153930664062,
+      "true_peak_k": 199.475341796875,
+      "pred_peak_k": 250.42153930664062,
+      "nrmse": 0.03457675874233246,
+      "nmae": 0.027540666982531548,
+      "z_true_peak_um": 103.2258064516129,
+      "z_pred_peak_um": 96.77419354838709
+    },
+    {
+      "name": "Glass / Water / PDMS",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 100.0,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 250.1013641357422,
+      "true_peak_k": 197.168212890625,
+      "pred_peak_k": 250.1013641357422,
+      "nrmse": 0.03487090393900871,
+      "nmae": 0.025962358340620995,
+      "z_true_peak_um": 103.2258064516129,
+      "z_pred_peak_um": 96.77419354838709
+    }
+  ],
+  "evaluation_cases": [
+    {
+      "name": "Case 1 (N=3)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 48.0,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 138.517333984375,
+      "true_peak_k": 121.25872802734375,
+      "pred_peak_k": 138.517333984375,
+      "nrmse": 0.013265005312860012,
+      "nmae": 0.007722564972937107,
+      "z_true_peak_um": 45.16129032258064,
+      "z_pred_peak_um": 45.16129032258064
+    },
+    {
+      "name": "Case 2 (N=4)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 54.93333333333334,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 183.38572692871094,
+      "true_peak_k": 151.5155029296875,
+      "pred_peak_k": 183.38572692871094,
+      "nrmse": 0.024932485073804855,
+      "nmae": 0.015882868319749832,
+      "z_true_peak_um": 58.064516129032256,
+      "z_pred_peak_um": 58.064516129032256
+    },
+    {
+      "name": "Case 3 (N=5)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 61.86666666666667,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 261.3359680175781,
+      "true_peak_k": 229.66583251953125,
+      "pred_peak_k": 261.3359680175781,
+      "nrmse": 0.011544657871127129,
+      "nmae": 0.006834530271589756,
+      "z_true_peak_um": 64.51612903225806,
+      "z_pred_peak_um": 64.51612903225806
+    },
+    {
+      "name": "Case 4 (N=4)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 68.8,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 233.2092742919922,
+      "true_peak_k": 197.55996704101562,
+      "pred_peak_k": 233.2092742919922,
+      "nrmse": 0.010286243632435799,
+      "nmae": 0.004837504588067532,
+      "z_true_peak_um": 70.96774193548387,
+      "z_pred_peak_um": 70.96774193548387
+    },
+    {
+      "name": "Case 5 (N=6)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 75.73333333333333,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 388.040283203125,
+      "true_peak_k": 347.5286865234375,
+      "pred_peak_k": 388.040283203125,
+      "nrmse": 0.01126017328351736,
+      "nmae": 0.004840307403355837,
+      "z_true_peak_um": 77.41935483870967,
+      "z_pred_peak_um": 77.41935483870967
+    },
+    {
+      "name": "Case 6 (N=3)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 82.66666666666667,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 324.9504699707031,
+      "true_peak_k": 281.1370849609375,
+      "pred_peak_k": 324.9504699707031,
+      "nrmse": 0.00636267801746726,
+      "nmae": 0.0028264601714909077,
+      "z_true_peak_um": 83.87096774193547,
+      "z_pred_peak_um": 83.87096774193547
+    },
+    {
+      "name": "Case 7 (N=5)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 89.6,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 646.748291015625,
+      "true_peak_k": 442.87646484375,
+      "pred_peak_k": 646.748291015625,
+      "nrmse": 0.02019905485212803,
+      "nmae": 0.01263775210827589,
+      "z_true_peak_um": 90.32258064516128,
+      "z_pred_peak_um": 90.32258064516128
+    },
+    {
+      "name": "Case 8 (N=5)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 96.53333333333333,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 596.9260864257812,
+      "true_peak_k": 869.6536254882812,
+      "pred_peak_k": 596.9260864257812,
+      "nrmse": 0.04014020785689354,
+      "nmae": 0.022689921781420708,
+      "z_true_peak_um": 96.77419354838709,
+      "z_pred_peak_um": 96.77419354838709
+    },
+    {
+      "name": "Case 9 (N=4)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 103.46666666666667,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 624.6762084960938,
+      "true_peak_k": 762.9345703125,
+      "pred_peak_k": 624.6762084960938,
+      "nrmse": 0.031567126512527466,
+      "nmae": 0.017998522147536278,
+      "z_true_peak_um": 103.2258064516129,
+      "z_pred_peak_um": 103.2258064516129
+    },
+    {
+      "name": "Case 10 (N=7)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 110.4,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 602.5276489257812,
+      "true_peak_k": 593.023681640625,
+      "pred_peak_k": 602.5276489257812,
+      "nrmse": 0.054067693650722504,
+      "nmae": 0.03496727719902992,
+      "z_true_peak_um": 109.6774193548387,
+      "z_pred_peak_um": 109.6774193548387
+    },
+    {
+      "name": "Case 11 (N=3)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 117.33333333333334,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 262.66363525390625,
+      "true_peak_k": 201.7610321044922,
+      "pred_peak_k": 262.66363525390625,
+      "nrmse": 0.020450903102755547,
+      "nmae": 0.009406191296875477,
+      "z_true_peak_um": 116.12903225806451,
+      "z_pred_peak_um": 116.12903225806451
+    },
+    {
+      "name": "Case 12 (N=5)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 124.26666666666667,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 378.600830078125,
+      "true_peak_k": 310.6578369140625,
+      "pred_peak_k": 378.600830078125,
+      "nrmse": 0.010755281895399094,
+      "nmae": 0.005685754120349884,
+      "z_true_peak_um": 122.58064516129032,
+      "z_pred_peak_um": 122.58064516129032
+    },
+    {
+      "name": "Case 13 (N=4)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 131.2,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 249.4749755859375,
+      "true_peak_k": 203.6470947265625,
+      "pred_peak_k": 249.4749755859375,
+      "nrmse": 0.015407169237732887,
+      "nmae": 0.007580343633890152,
+      "z_true_peak_um": 129.03225806451613,
+      "z_pred_peak_um": 129.03225806451613
+    },
+    {
+      "name": "Case 14 (N=6)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 138.13333333333333,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 335.0329895019531,
+      "true_peak_k": 272.35504150390625,
+      "pred_peak_k": 335.0329895019531,
+      "nrmse": 0.019432825967669487,
+      "nmae": 0.01174287311732769,
+      "z_true_peak_um": 135.48387096774192,
+      "z_pred_peak_um": 135.48387096774192
+    },
+    {
+      "name": "Case 15 (N=3)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 145.06666666666666,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 136.51666259765625,
+      "true_peak_k": 124.31269073486328,
+      "pred_peak_k": 136.51666259765625,
+      "nrmse": 0.017549216747283936,
+      "nmae": 0.011898641474545002,
+      "z_true_peak_um": 141.93548387096774,
+      "z_pred_peak_um": 141.93548387096774
+    },
+    {
+      "name": "Case 16 (N=5)",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 152.0,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 260.49468994140625,
+      "true_peak_k": 233.14923095703125,
+      "pred_peak_k": 260.49468994140625,
+      "nrmse": 0.020768288522958755,
+      "nmae": 0.012050754390656948,
+      "z_true_peak_um": 154.83870967741933,
+      "z_pred_peak_um": 154.83870967741933
+    }
+  ],
+  "topology_cases": [
+    {
+      "name": "Square Array",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 100.0,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 431.42156982421875,
+      "true_peak_k": 623.9417114257812,
+      "pred_peak_k": 431.42156982421875,
+      "nrmse": 0.19451728463172913,
+      "nmae": 0.12603998184204102,
+      "z_true_peak_um": 103.2258064516129,
+      "z_pred_peak_um": 38.70967741935483
+    },
+    {
+      "name": "Nanoring",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 100.0,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 543.3707885742188,
+      "true_peak_k": 435.6119384765625,
+      "pred_peak_k": 543.3707885742188,
+      "nrmse": 0.0476921908557415,
+      "nmae": 0.04110313951969147,
+      "z_true_peak_um": 103.2258064516129,
+      "z_pred_peak_um": 103.2258064516129
+    },
+    {
+      "name": "Cross Pattern",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 100.0,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 528.6681518554688,
+      "true_peak_k": 842.8551025390625,
+      "pred_peak_k": 528.6681518554688,
+      "nrmse": 0.18740737438201904,
+      "nmae": 0.12006451934576035,
+      "z_true_peak_um": 103.2258064516129,
+      "z_pred_peak_um": 45.16129032258064
+    },
+    {
+      "name": "Dual Clusters",
+      "materials": [
+        "glass",
+        "water",
+        "pdms"
+      ],
+      "boundaries_um": [
+        40.0,
+        160.0
+      ],
+      "z0_um": 100.0,
+      "sigma_abs_um2": 0.020894135777742025,
+      "predicted_peak_k": 402.7867736816406,
+      "true_peak_k": 300.7060241699219,
+      "pred_peak_k": 402.7867736816406,
+      "nrmse": 0.040969159454107285,
+      "nmae": 0.02945014461874962,
+      "z_true_peak_um": 103.2258064516129,
+      "z_pred_peak_um": 96.77419354838709
+    }
+  ]
+}

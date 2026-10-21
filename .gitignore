@@ -1,0 +1,11 @@
+﻿__pycache__/
+*.py[cod]
+*.class
+.ipynb_checkpoints/
+.vscode/
+*.aux
+*.log
+*.out
+*.synctex*
+*.tdms
+*.tdms_index
